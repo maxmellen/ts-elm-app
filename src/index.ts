@@ -1,3 +1,5 @@
-let message: string = "Hello world!";
+import { Elm } from "./Main";
 
-console.log(message);
+Elm.Main.init({
+  node: document.getElementById("elm-main")
+});

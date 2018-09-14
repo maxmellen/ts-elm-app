@@ -11,6 +11,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "elm-webpack-loader": "^5.0.0",
     "ts-loader": "^5.1.0",
     "typescript": "^3.0.3",
     "webpack": "^4.19.0",

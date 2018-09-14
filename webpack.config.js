@@ -6,6 +6,16 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.elm$/,
+        use: {
+          loader: "elm-webpack-loader",
+          options: {
+            optimize: true
+          }
+        },
+        include: path.resolve(__dirname, "src")
+      },
+      {
         test: /\.ts$/,
         use: "ts-loader",
         include: path.resolve(__dirname, "src")
@@ -13,7 +23,7 @@ module.exports = {
     ]
   },
   resolve: {
-    extensions: [".ts", ".js"]
+    extensions: [".elm", ".ts", ".js"]
   },
   output: {
     filename: "main.js",
