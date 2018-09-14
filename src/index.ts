@@ -13,3 +13,7 @@ let app = Elm.Main.init({
 externalIncrementButton.addEventListener("click", function(event) {
   app.ports.externalIncrement.send(null);
 });
+
+app.ports.alert.subscribe(function(data) {
+  alert(data);
+});
