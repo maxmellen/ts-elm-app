@@ -13,6 +13,7 @@ module.exports = {
         use: {
           loader: "elm-webpack-loader",
           options: {
+            warn: true,
             optimize: true
           }
         },
